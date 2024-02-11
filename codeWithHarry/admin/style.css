@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    color: white;
+}
+html, body{
+    height: 100%;
+    width: 100%;  
+}
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color: #d5fc6b;
+    border-radius: 25px;
+    position: fixed;
+    z-index: 18;
+    opacity: 0;
+}
+#cursor-blur{
+    height: 300px;
+    width: 300px;
+    background-color: #96c11e59;
+    border-radius: 150px;
+    position: fixed;
+    z-index: 1;
+    filter: blur(60px);
+    opacity: 0;
+}
+.nav{
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-left: 120px;
+    position: fixed;
+    z-index: 80;
+}
+.nav img{
+    height: 65px;
+}
+.nav h4{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+.main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.383);
+}
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.page1 h1{
+    font-size: 110px;
+    font-weight: 100px;
+    position: relative;
+    padding-bottom:25px;
+    padding-top:80px;
+}
+.page1 h1::before{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute;
+    padding-top:80px;
+    color: black;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 2px #95C11E;
+    z-index: -1;
+}
+.page1 h3{
+    font-size: 40px;
+    font-weight: 10px;
+    padding-bottom: 10px;   
+}
+.page1 p{
+    width: 38%;
+    font-size: 15px;
+    text-align: center;
+}
+#page2{
+    /* border: 5px solid black; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 14;
+    padding-top: 10%;
+}
+#scroller{
+    /* border: 3px solid green; */
+    height: 200px;
+    width: 100%;
+}
+marquee h4{
+    display: inline-block;
+    font-size: 120px;
+    font-weight:1000;
+    text-transform:uppercase ;
+    font-family: gilroy;
+    margin-right: 80px;
+    -webkit-text-stroke: 2px #95C11E;
+    color: transparent;
+    position: relative;
+    z-index:15;
+    /* text-decoration: dashed; */
+
+}
+marquee h4:hover{
+    /* background-color: #fff; */
+    color: #95C11E;
+    font-size: 125px;
+}
+marque{
+    position: relative;
+    z-index: 18;
+}
+#about-us{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+.card{
+width: 220px; 
+height: 220px; 
+border-radius: 20px;
+border: 1px solid #cccccc;
+
+}
+#about-us-in{
+height: 250px; 
+width: 600px;
+margin-top: 0;
+margin-left: 70px;
+margin-right: 70px;
+text-align: center;
+background-color:#cccccc8f;
+border: 1px solid #cccccc;
+padding: 25px;
+border-radius: 10px;
+
+}
+#about-parra{
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 20px;
+text-align: justify;
+color: black;
+}
+#about-heading{
+    font-size: 40px;
+    color: black;
+}
+.card:hover{
+    width: 240px; 
+    height: 240px; 
+    border-radius: 30px;
+    }
